@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="min-h-[600px] flex items-center justify-center bg-[#401444]">
+    <section className="min-h-[600px] flex items-center justify-center">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
           <div className="max-w-[600px]">

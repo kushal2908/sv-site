@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Services() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 bg-[#401444]">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 pb-14">
       <ColumnOne />
       <ColumnTwo />
       <ColumnThree />
@@ -27,6 +27,34 @@ const ColumnOne = () => {
           className="w-full h-[200px] object-contain"
         />
       </div>
+      <div className="border border-gray-50/50 rounded-lg overflow-hidden">
+        <Image
+          src={
+            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+          alt=""
+          width={100}
+          height={200}
+          className="w-full h-[200px] object-contain rounded-lg"
+        />
+      </div>
+      <AnimatedCard
+        title={
+          <>
+            V2 <br /> Technologies
+          </>
+        }
+        description={
+          <>
+            <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
+              Customized Software Development
+            </p>
+            <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
+              Data Analytics & Visualization
+            </p>
+          </>
+        }
+      />
       <div className="border border-gray-50/50 rounded-lg overflow-hidden">
         <Image
           src={
@@ -62,6 +90,30 @@ const ColumnTwo = () => {
           </>
         }
       />
+      <div className="border border-gray-50/50 rounded-lg overflow-hidden">
+        <Image
+          src={
+            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+          alt=""
+          width={100}
+          height={200}
+          className="w-full h-[200px] object-contain"
+        />
+      </div>
+      <AnimatedCard
+        title={<>AULEEK</>}
+        description={
+          <>
+            <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
+              Architectural & Product Visualization
+            </p>
+            <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
+              Data Analytics & Visualization
+            </p>
+          </>
+        }
+      />
     </div>
   );
 };
@@ -69,6 +121,45 @@ const ColumnTwo = () => {
 const ColumnThree = () => {
   return (
     <div className="flex flex-col gap-4 items-center justify-center">
+      <div className="border border-gray-50/50 rounded-lg overflow-hidden">
+        <Image
+          src={
+            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+          alt=""
+          width={100}
+          height={200}
+          className="w-full h-[200px] object-contain rounded-lg"
+        />
+      </div>
+      <AnimatedCard
+        title={
+          <>
+            MVRK <br /> STUDIOS{" "}
+          </>
+        }
+        description={
+          <>
+            <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
+              Visual Effects
+            </p>
+            <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
+              Motion Graphics
+            </p>
+          </>
+        }
+      />
+      <div className="border border-gray-50/50 rounded-lg overflow-hidden">
+        <Image
+          src={
+            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+          alt=""
+          width={100}
+          height={200}
+          className="w-full h-[200px] object-contain rounded-lg"
+        />
+      </div>{" "}
       <div className="border border-gray-50/50 rounded-lg overflow-hidden">
         <Image
           src={
@@ -98,6 +189,37 @@ const ColumnFour = () => {
           className="w-full h-[200px] object-contain rounded-lg"
         />
       </div>
+      <div className="border border-gray-50/50 rounded-lg overflow-hidden">
+        <Image
+          src={
+            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+          alt=""
+          width={100}
+          height={200}
+          className="w-full h-[200px] object-contain rounded-lg"
+        />
+      </div>
+      <AnimatedCard
+        title={
+          <>
+            PLUS ONLINE <br /> MARKETING
+          </>
+        }
+        description={
+          <>
+            <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
+              Search Engine Optimization
+            </p>
+            <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
+              Website Design & Development
+            </p>
+            <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
+              Performance Marketing
+            </p>
+          </>
+        }
+      />
       <div className="border border-gray-50/50 rounded-lg overflow-hidden">
         <Image
           src={

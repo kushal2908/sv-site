@@ -94,26 +94,50 @@ export default function Footer() {
 
 const LocationBlock = () => {
     return (
-        <div className="text-center">
-            <h2 className="font-medium text-xl">Locations</h2>
+        <div className="">
+            <h2 className="font-medium text-xl text-center">Locations</h2>
             <div className="flex flex-col items-center justify-center gap-4 mt-4">
-                <a data-tooltip-id="bangladesh-tooltip">Bangladesh</a>
-                <a data-tooltip-id="singapore-tooltip" className="mb-0">
+                <a
+                    data-tooltip-id="bangladesh-tooltip"
+                    className="text-gray-300 text-lg hover:text-xl hover:underline hover:text-white transition-all duration-100"
+                >
+                    Bangladesh
+                </a>
+                <a
+                    data-tooltip-id="singapore-tooltip"
+                    className="text-gray-300 text-lg hover:text-xl hover:underline hover:text-white transition-all duration-100"
+                >
                     Singapore
                 </a>
-                <a data-tooltip-id="uae-tooltip" className="mb-0">
+                <a
+                    data-tooltip-id="uae-tooltip"
+                    className="text-gray-300 text-lg hover:text-xl hover:underline hover:text-white transition-all duration-100"
+                >
                     UAE
                 </a>
             </div>
 
-            <Tooltip id="bangladesh-tooltip">
-                <div></div>
+            <Tooltip id="bangladesh-tooltip" style={{ backgroundColor: 'black' }}>
+                <div>
+                    <p>HOUSE#340</p>
+                    <p>ROAD#24</p>
+                    <p>MOHAKHALI DOHS</p>
+                    <p>DHAKA</p>
+                </div>
             </Tooltip>
-            <Tooltip id="singapore-tooltip">
-                <div></div>
+            <Tooltip id="singapore-tooltip" style={{ backgroundColor: 'black' }}>
+                <div>
+                    <p>STREET#5</p>
+                    <p>SHENTON WAY</p>
+                    <p>SINGAPORE</p>
+                </div>
             </Tooltip>
-            <Tooltip id="uae-tooltip">
-                <div></div>
+            <Tooltip id="uae-tooltip" style={{ backgroundColor: 'black' }}>
+                <div>
+                    <p>HOUSE#45</p>
+                    <p>SHEIKH ZAYED ROAD</p>
+                    <p>DUBAI</p>
+                </div>
             </Tooltip>
         </div>
     );

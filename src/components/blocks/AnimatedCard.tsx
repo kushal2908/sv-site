@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import { cn } from "../lib/utils";
+import { motion } from "motion/react";
 
 type Props = {
   height?: string | number;
@@ -9,30 +11,49 @@ type Props = {
 
 export default function AnimatedCard({ height, title, description }: Props) {
   return (
-    <div
+    <motion.div
+      initial="rest"
+      whileHover="hover"
+      animate="rest"
       className={cn(
-        "group relative border border-gray-50/50 rounded-lg overflow-hidden w-full p-14",
-        height ? `h-[${height}px]` : "h-[420px]"
+        "group relative border border-gray-50/50 rounded-lg overflow-hidden w-full p-14 shadow-lg cursor-pointer"
+        // add inner glow via pseudo
       )}
+      style={{ height: height ?? 420 }}
     >
-      {/* H1 (hidden initially, slides in to top-left) */}
-      <h1
-        className="absolute top-4 left-6 font-bold text-2xl text-white tracking-tight
-                 opacity-0 -translate-y-4 -translate-x-4 transition-all duration-500 ease-out
-                 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 uppercase"
+      {/* Title */}
+      <motion.h2
+        variants={{
+          rest: { opacity: 0, x: 0, y: -20 },
+          hover: {
+            opacity: 1,
+            x: 0,
+            y: 0,
+            transition: { duration: 0.5, ease: "easeOut" },
+          },
+        }}
+        className="absolute top-6 left-6 font-black text-xl text-white tracking-tight uppercase"
       >
         {title}
-      </h1>
+      </motion.h2>
 
-      {/* P tags (center -> bottom-left) */}
-      <div
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 
-                 flex flex-col gap-2 text-white text-xl transition-all duration-500 ease-out
-                 group-hover:left-6 group-hover:top-auto group-hover:bottom-4 
-                 group-hover:translate-x-0 group-hover:translate-y-0"
+      {/* Description */}
+      <motion.div
+        variants={{
+          rest: { x: "-40%", y: "-40%", left: "40%", top: "40%" },
+          hover: {
+            x: 0,
+            y: 0,
+            left: "1.5rem",
+            top: "auto",
+            bottom: "1.5rem",
+            transition: { duration: 0.5, ease: "easeOut" },
+          },
+        }}
+        className="absolute flex flex-col gap-2 text-white text-xl whitespace-pre-line"
       >
         {description}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }

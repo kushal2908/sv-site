@@ -47,10 +47,10 @@ const ColumnOne = () => {
         description={
           <>
             <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
-              Customized Software Development
+              Customized Software <br /> Development
             </p>
             <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
-              Data Analytics & Visualization
+              Data Analytics & <br /> Visualization
             </p>
           </>
         }
@@ -106,10 +106,11 @@ const ColumnTwo = () => {
         description={
           <>
             <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
-              Architectural & Product Visualization
+              Architectural & <br />
+              Product Visualization
             </p>
             <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
-              Data Analytics & Visualization
+              Data Analytics & <br /> Visualization
             </p>
           </>
         }
@@ -209,13 +210,14 @@ const ColumnFour = () => {
         description={
           <>
             <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
-              Search Engine Optimization
+              Search Engine <br /> Optimization
             </p>
             <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
-              Website Design & Development
+              Website Design & <br /> Development
             </p>
             <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
-              Performance Marketing
+              Performance <br />
+              Marketing
             </p>
           </>
         }

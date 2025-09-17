@@ -17,28 +17,8 @@ export default function Services() {
 const ColumnOne = () => {
   return (
     <div className="flex flex-col gap-4 items-center justify-center">
-      <div className="border border-gray-50/50 rounded-lg overflow-hidden">
-        <Image
-          src={
-            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
-          alt=""
-          width={100}
-          height={200}
-          className="w-full h-[200px] object-contain"
-        />
-      </div>
-      <div className="border border-gray-50/50 rounded-lg overflow-hidden">
-        <Image
-          src={
-            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
-          alt=""
-          width={100}
-          height={200}
-          className="w-full h-[200px] object-contain rounded-lg"
-        />
-      </div>
+      <ServiceImage src={"/brands/skill-graphics/skill-graphics-1.png"} />
+      <ServiceImage src={"/brands/skill-graphics/skill-graphics-3.jpg"} />
       <AnimatedCard
         title={
           <>
@@ -113,17 +93,7 @@ const ColumnTwo = () => {
 const ColumnThree = () => {
   return (
     <div className="flex flex-col gap-4 items-center justify-center">
-      <div className="border border-gray-50/50 rounded-lg overflow-hidden">
-        <Image
-          src={
-            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
-          alt=""
-          width={100}
-          height={200}
-          className="w-full h-[200px] object-contain rounded-lg"
-        />
-      </div>
+      <ServiceImage src={"/brands/skill-graphics/skill-graphics-2.png"} />
       <AnimatedCard
         title={
           <>
@@ -160,17 +130,7 @@ const ColumnThree = () => {
 const ColumnFour = () => {
   return (
     <div className="flex flex-col gap-4 items-center justify-center">
-      <div className="border border-gray-50/50 rounded-lg overflow-hidden">
-        <Image
-          src={
-            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
-          alt=""
-          width={100}
-          height={200}
-          className="w-full h-[200px] object-contain rounded-lg"
-        />
-      </div>
+      <ServiceImage src={"/brands/skill-graphics/skill-graphics-4.png"} />
       <ServiceImage src={"/brands/mvrk/mvrk-node-graph.png"} />
       <AnimatedCard
         title={

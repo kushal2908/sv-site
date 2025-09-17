@@ -1,4 +1,5 @@
 import AnimatedCard from "@/components/blocks/AnimatedCard";
+import ServiceImage from "@/components/blocks/ServiceImage";
 import Image from "next/image";
 import React from "react";
 
@@ -90,17 +91,7 @@ const ColumnTwo = () => {
           </>
         }
       />
-      <div className="border border-gray-50/50 rounded-lg overflow-hidden">
-        <Image
-          src={
-            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
-          alt=""
-          width={100}
-          height={200}
-          className="w-full h-[200px] object-contain"
-        />
-      </div>
+      <ServiceImage src={"/brands/mvrk/overlay.png"} />
       <AnimatedCard
         title={<>AULEEK</>}
         description={
@@ -160,18 +151,8 @@ const ColumnThree = () => {
           height={200}
           className="w-full h-[200px] object-contain rounded-lg"
         />
-      </div>{" "}
-      <div className="border border-gray-50/50 rounded-lg overflow-hidden">
-        <Image
-          src={
-            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
-          alt=""
-          width={100}
-          height={200}
-          className="w-full h-[200px] object-contain rounded-lg"
-        />
       </div>
+      <ServiceImage src={"/brands/auleek/auleek-1.png"} />
     </div>
   );
 };
@@ -190,17 +171,7 @@ const ColumnFour = () => {
           className="w-full h-[200px] object-contain rounded-lg"
         />
       </div>
-      <div className="border border-gray-50/50 rounded-lg overflow-hidden">
-        <Image
-          src={
-            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
-          alt=""
-          width={100}
-          height={200}
-          className="w-full h-[200px] object-contain rounded-lg"
-        />
-      </div>
+      <ServiceImage src={"/brands/mvrk/mvrk-node-graph.png"} />
       <AnimatedCard
         title={
           <>
@@ -211,6 +182,9 @@ const ColumnFour = () => {
           <>
             <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
               Search Engine <br /> Optimization
+            </p>
+            <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
+              Content <br /> Management
             </p>
             <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
               Website Design & <br /> Development

@@ -50,7 +50,7 @@ export default function AnimatedCard({ height, title, description }: Props) {
             transition: { duration: 0.5, ease: "easeOut" },
           },
         }}
-        className="absolute flex flex-col gap-2 text-white text-xl whitespace-pre-line"
+        className="absolute flex flex-col gap-2 text-white font-normal text-[18px] whitespace-pre-line"
       >
         {description}
       </motion.div>

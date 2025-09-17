@@ -4,6 +4,13 @@ import React from "react";
 export default function Hero() {
   return (
     <section className="min-h-[600px] flex items-center justify-center">
+      <Image
+        src={"/hero.png"}
+        alt="Hero Image"
+        width={1920}
+        height={1080}
+        className="absolute object-contain h-full w-full -z-10"
+      />
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
           <div className="max-w-[600px]">

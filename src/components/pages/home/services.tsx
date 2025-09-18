@@ -1,172 +1,133 @@
-import AnimatedCard from "@/components/blocks/AnimatedCard";
-import ServiceImage from "@/components/blocks/ServiceImage";
-import Image from "next/image";
-import React from "react";
+import AnimatedCard from '@/components/blocks/AnimatedCard';
+import ServiceImage from '@/components/blocks/ServiceImage';
+import React from 'react';
 
 export default function Services() {
-  return (
-    <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 pb-14">
-      <ColumnOne />
-      <ColumnTwo />
-      <ColumnThree />
-      <ColumnFour />
-    </div>
-  );
+    return (
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 pb-14">
+            <ColumnOne />
+            <ColumnTwo />
+            <ColumnThree />
+            <ColumnFour />
+        </div>
+    );
 }
 
 const ColumnOne = () => {
-  return (
-    <div className="flex flex-col gap-4 items-center justify-center">
-      <ServiceImage src={"/brands/skill-graphics/skill-graphics-1.png"} />
-      <ServiceImage src={"/brands/skill-graphics/skill-graphics-3.jpg"} />
-      <AnimatedCard
-        title={
-          <>
-            V2 <br /> Technologies
-          </>
-        }
-        description={
-          <>
-            <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
-              Customized Software <br /> Development
-            </p>
-            <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
-              Data Analytics & <br /> Visualization
-            </p>
-          </>
-        }
-      />
-      <div className="border border-gray-50/50 rounded-lg overflow-hidden">
-        <Image
-          src={
-            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
-          alt=""
-          width={100}
-          height={200}
-          className="w-full h-[200px] object-contain rounded-lg"
-        />
-      </div>
-    </div>
-  );
+    return (
+        <div className="flex flex-col gap-4 items-center justify-center">
+            <ServiceImage src={'/brands/skill-graphics/skill-graphics-1.png'} />
+            <ServiceImage src={'/brands/skill-graphics/skill-graphics-3.jpg'} />
+            <AnimatedCard
+                title={
+                    <>
+                        V2 <br /> Technologies
+                    </>
+                }
+                description={
+                    <>
+                        <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
+                            Customized Software <br /> Development
+                        </p>
+                        <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
+                            Data Analytics & <br /> Visualization
+                        </p>
+                    </>
+                }
+            />
+            <ServiceImage src={'/brands/v2/v2-1.png'} />
+        </div>
+    );
 };
 
 const ColumnTwo = () => {
-  return (
-    <div className="flex flex-col gap-4 items-center justify-center">
-      <AnimatedCard
-        title={
-          <>
-            Skill <br /> Graphics
-          </>
-        }
-        description={
-          <>
-            <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
-              Image Editing
-            </p>
-            <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
-              Video Editing
-            </p>
-          </>
-        }
-      />
-      <ServiceImage src={"/brands/mvrk/overlay.png"} />
-      <AnimatedCard
-        title={<>AULEEK</>}
-        description={
-          <>
-            <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
-              Architectural & <br />
-              Product Visualization
-            </p>
-            <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
-              Data Analytics & <br /> Visualization
-            </p>
-          </>
-        }
-      />
-    </div>
-  );
+    return (
+        <div className="flex flex-col gap-4 items-center justify-center">
+            <AnimatedCard
+                title={
+                    <>
+                        Skill <br /> Graphics
+                    </>
+                }
+                description={
+                    <>
+                        <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">Image Editing</p>
+                        <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">Video Editing</p>
+                    </>
+                }
+            />
+            <ServiceImage src={'/brands/mvrk/overlay.png'} />
+            <AnimatedCard
+                title={<>AULEEK</>}
+                description={
+                    <>
+                        <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
+                            Architectural & <br />
+                            Product Visualization
+                        </p>
+                        <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
+                            Data Analytics & <br /> Visualization
+                        </p>
+                    </>
+                }
+            />
+        </div>
+    );
 };
 
 const ColumnThree = () => {
-  return (
-    <div className="flex flex-col gap-4 items-center justify-center">
-      <ServiceImage src={"/brands/skill-graphics/skill-graphics-2.png"} />
-      <AnimatedCard
-        title={
-          <>
-            MVRK <br /> STUDIOS{" "}
-          </>
-        }
-        description={
-          <>
-            <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
-              Visual Effects
-            </p>
-            <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
-              Motion Graphics
-            </p>
-          </>
-        }
-      />
-      <div className="border border-gray-50/50 rounded-lg overflow-hidden">
-        <Image
-          src={
-            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
-          alt=""
-          width={100}
-          height={200}
-          className="w-full h-[200px] object-contain rounded-lg"
-        />
-      </div>
-      <ServiceImage src={"/brands/auleek/auleek-1.png"} />
-    </div>
-  );
+    return (
+        <div className="flex flex-col gap-4 items-center justify-center">
+            <ServiceImage src={'/brands/skill-graphics/skill-graphics-2.png'} />
+            <AnimatedCard
+                title={
+                    <>
+                        MVRK <br /> STUDIOS{' '}
+                    </>
+                }
+                description={
+                    <>
+                        <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">Visual Effects</p>
+                        <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">Motion Graphics</p>
+                    </>
+                }
+            />
+            <ServiceImage src={'/brands/plus/plus-1.png'} />
+            <ServiceImage src={'/brands/auleek/auleek-1.png'} />
+        </div>
+    );
 };
 
 const ColumnFour = () => {
-  return (
-    <div className="flex flex-col gap-4 items-center justify-center">
-      <ServiceImage src={"/brands/skill-graphics/skill-graphics-4.png"} />
-      <ServiceImage src={"/brands/mvrk/mvrk-node-graph.png"} />
-      <AnimatedCard
-        title={
-          <>
-            PLUS ONLINE <br /> MARKETING
-          </>
-        }
-        description={
-          <>
-            <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
-              Search Engine <br /> Optimization
-            </p>
-            <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
-              Content <br /> Management
-            </p>
-            <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
-              Website Design & <br /> Development
-            </p>
-            <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
-              Performance <br />
-              Marketing
-            </p>
-          </>
-        }
-      />
-      <div className="border border-gray-50/50 rounded-lg overflow-hidden">
-        <Image
-          src={
-            "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          }
-          alt=""
-          width={100}
-          height={200}
-          className="w-full h-[200px] object-contain rounded-lg"
-        />
-      </div>
-    </div>
-  );
+    return (
+        <div className="flex flex-col gap-4 items-center justify-center">
+            <ServiceImage src={'/brands/skill-graphics/skill-graphics-4.png'} />
+            <ServiceImage src={'/brands/mvrk/mvrk-node-graph.png'} />
+            <AnimatedCard
+                title={
+                    <>
+                        PLUS ONLINE <br /> MARKETING
+                    </>
+                }
+                description={
+                    <>
+                        <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
+                            Search Engine <br /> Optimization
+                        </p>
+                        <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
+                            Content <br /> Management
+                        </p>
+                        <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
+                            Website Design & <br /> Development
+                        </p>
+                        <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
+                            Performance <br />
+                            Marketing
+                        </p>
+                    </>
+                }
+            />
+            <ServiceImage src={'/brands/plus/plus-2.png'} />
+        </div>
+    );
 };

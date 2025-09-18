@@ -14,7 +14,7 @@ export default function Hero() {
                         </h1>
                     </div>
                     <div>
-                        <Image src={'/logo.png'} alt="Hero Image" width={500} height={600} className="w-full" />
+                        <Image src={'/logo.png'} alt="Hero Image" width={500} height={400} className="w-full h-[200px] object-contain" />
                     </div>
                 </div>
             </div>

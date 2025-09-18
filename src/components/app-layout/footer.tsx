@@ -13,7 +13,7 @@ export default function Footer() {
                 </div>
 
                 {/* Social Media */}
-                <div className="text-center border-0 md:border-r border-gray-100">
+                <div className="text-center border-0 md:border-r border-gray-100 mb-14 md:mb-0">
                     <h2 className="font-medium text-gray-200 text-xl mt-8">Keep Connected</h2>
                     <div className="flex items-center justify-center gap-4 mt-4">
                         {/* Instagram */}

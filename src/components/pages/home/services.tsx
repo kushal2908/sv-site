@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Services() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 pb-14 max-w-[1700px] mx-auto">
+        <div className="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-4 p-4 pb-14">
             <ColumnOne />
             <ColumnTwo />
             <ColumnThree />
@@ -34,6 +34,7 @@ const ColumnOne = () => {
                         </p>
                     </>
                 }
+                url="https://v2.ltd/"
             />
             <ServiceImage src={'/brands/v2/v2-1.png'} />
         </div>
@@ -57,7 +58,7 @@ const ColumnTwo = () => {
                 }
                 url="https://skillgraphics.biz/"
             />
-            <ServiceImage src={'/brands/mvrk/mvrk-node-graph.png'} />
+            <ServiceImage src={'/brands/mvrk/mvrk-1.jpg'} />
             <AnimatedCard
                 title={<>AULEEK</>}
                 description={
@@ -105,7 +106,16 @@ const ColumnFour = () => {
     return (
         <div className="flex flex-col gap-4 items-center justify-center">
             <ServiceImage src={'/brands/skill-graphics/skill-graphics-4.png'} />
-            <ServiceImage src={'/brands/mvrk/mvrk-node-graph.png'} />
+            <div className="relative border border-gray-50/50 rounded-lg overflow-hidden">
+                <video
+                    src="/brands/mvrk/mvrk-vid.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    className="w-[500px] md:w-[430px] h-[250px] object-cover rounded-lg"
+                />
+                <div className="absolute inset-0 bg-[#401444]/40" />
+            </div>
             <AnimatedCard
                 title={
                     <>

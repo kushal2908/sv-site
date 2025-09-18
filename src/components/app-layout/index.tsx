@@ -5,7 +5,7 @@ import NavBar from './nav-bar';
 export default function AppLayout({ children }: { children: React.ReactNode }) {
     return (
         <main>
-            {/* <NavBar /> */}
+            <NavBar />
             {children}
             <Footer />
         </main>

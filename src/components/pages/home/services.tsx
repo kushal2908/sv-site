@@ -1,15 +1,23 @@
 import AnimatedCard from '@/components/blocks/AnimatedCard';
 import ServiceImage from '@/components/blocks/ServiceImage';
 import React from 'react';
+import ServiceMobile from './service-mobile';
 
 export default function Services() {
     return (
-        <div className="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-4 p-4 pb-14">
-            <ColumnOne />
-            <ColumnTwo />
-            <ColumnThree />
-            <ColumnFour />
-        </div>
+        <>
+            {/* Desktop view */}
+            <div className="max-w-[1600px] mx-auto hidden lg:grid grid-cols-1 lg:grid-cols-4 gap-4 p-4 pb-14">
+                <ColumnOne />
+                <ColumnTwo />
+                <ColumnThree />
+                <ColumnFour />
+            </div>
+            {/* Mobile view */}
+            <div className="mx-auto px-4 block lg:hidden">
+                <ServiceMobile />
+            </div>
+        </>
     );
 }
 

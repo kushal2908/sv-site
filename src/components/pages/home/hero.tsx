@@ -9,7 +9,7 @@ export default function Hero() {
                 alt="Hero Image"
                 width={1920}
                 height={500}
-                className="absolute object-contain h-[600px] w-full -z-10 top-20 "
+                className="absolute object-contain h-[600px] w-full -z-10 top-10 "
             />
 
             <div className=" w-[1100px] flex flex-col md:flex-row justify-between items-center gap-4 ">

@@ -8,13 +8,15 @@ type Props = {
     height?: string | number;
     title?: React.ReactNode;
     description?: React.ReactNode;
+    url?: string;
 };
 
-export default function AnimatedCard({ height, title, description }: Props) {
+export default function AnimatedCard({ height, title, description, url }: Props) {
     return (
         <motion.div
             initial="rest"
             whileHover="hover"
+            whileTap="hover"
             animate="rest"
             className={cn(
                 'group relative border border-gray-50/50 rounded-lg overflow-hidden w-full p-14 shadow-lg cursor-pointer'
@@ -37,17 +39,32 @@ export default function AnimatedCard({ height, title, description }: Props) {
             >
                 {title}
             </motion.h2>
-
-            {/* URL */}
+            {url && (
+                <motion.div
+                    variants={{
+                        rest: { opacity: 0, y: 10 },
+                        hover: {
+                            opacity: 1,
+                            y: -50,
+                            transition: { duration: 0.4, ease: 'easeOut' },
+                        },
+                    }}
+                    className="absolute left-6 bottom-40 text-md font-bold text-gray-200 z-10 hover:underline"
+                >
+                    <a href={url} target="_blank" rel="noopener noreferrer">
+                        Visit Project →
+                    </a>
+                </motion.div>
+            )}
 
             {/* Description */}
             <motion.div
                 variants={{
-                    rest: { x: '-40%', y: '-40%', left: '40%', top: '40%' },
+                    rest: { x: '-50%', y: '-50%', left: '50%', top: '50%' },
                     hover: {
                         x: 0,
                         y: 0,
-                        left: '1.5rem',
+                        left: '1.0rem',
                         top: 'auto',
                         bottom: '1.5rem',
                         transition: { duration: 0.5, ease: 'easeOut' },

@@ -55,6 +55,7 @@ const ColumnTwo = () => {
                         <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">Video Editing</p>
                     </>
                 }
+                url="https://skillgraphics.biz/"
             />
             <ServiceImage src={'/brands/mvrk/overlay.png'} />
             <AnimatedCard
@@ -70,6 +71,7 @@ const ColumnTwo = () => {
                         </p>
                     </>
                 }
+                url="https://auleek.com/"
             />
         </div>
     );
@@ -91,6 +93,7 @@ const ColumnThree = () => {
                         <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">Motion Graphics</p>
                     </>
                 }
+                url="https://mvrk.tv/"
             />
             <ServiceImage src={'/brands/plus/plus-1.png'} />
             <ServiceImage src={'/brands/auleek/auleek-1.png'} />
@@ -112,20 +115,16 @@ const ColumnFour = () => {
                 description={
                     <>
                         <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
-                            Search Engine <br /> Optimization
+                            Search Engine Optimization
                         </p>
-                        <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
-                            Content <br /> Management
-                        </p>
+                        <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">Content Management</p>
                         <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
-                            Website Design & <br /> Development
+                            Website Design & Development
                         </p>
-                        <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
-                            Performance <br />
-                            Marketing
-                        </p>
+                        <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">Performance Marketing</p>
                     </>
                 }
+                url="https://plusonlinemarketing.com/"
             />
             <ServiceImage src={'/brands/plus/plus-2.png'} />
         </div>

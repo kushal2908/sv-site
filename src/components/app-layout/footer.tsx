@@ -9,7 +9,7 @@ export default function Footer() {
         <footer className=" flex justify-center items-center py-14 px-4 bg-gradient-to-b from-[#551b5e] to-[#401444] text-white">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="border-0 md:border-r border-gray-100">
-                    <Image src={'/logo.png'} alt="Hero Image" width={500} height={200} className="h-[200px] object-contain" />
+                    <Image src={'/logo.png'} alt="Hero Image" width={500} height={200} className="h-[100px] object-contain" />
                 </div>
 
                 {/* Social Media */}

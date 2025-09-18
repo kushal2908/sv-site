@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Services() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 pb-14">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 p-4 pb-14 max-w-[1700px] mx-auto">
             <ColumnOne />
             <ColumnTwo />
             <ColumnThree />
@@ -57,7 +57,7 @@ const ColumnTwo = () => {
                 }
                 url="https://skillgraphics.biz/"
             />
-            <ServiceImage src={'/brands/mvrk/overlay.png'} />
+            <ServiceImage src={'/brands/mvrk/mvrk-node-graph.png'} />
             <AnimatedCard
                 title={<>AULEEK</>}
                 description={

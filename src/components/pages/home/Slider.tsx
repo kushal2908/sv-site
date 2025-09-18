@@ -10,7 +10,7 @@ export default function LogoSlider() {
         <div className="min-h-[300px] flex items-center justify-center">
             <Swiper
                 modules={[Autoplay]}
-                spaceBetween={0}
+                spaceBetween={10}
                 slidesPerView={6}
                 loop={true}
                 autoplay={{

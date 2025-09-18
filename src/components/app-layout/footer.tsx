@@ -14,7 +14,7 @@ export default function Footer() {
 
                 {/* Social Media */}
                 <div className="text-center border-0 md:border-r border-gray-100">
-                    <h2 className="font-medium text-xl">Keep Connected</h2>
+                    <h2 className="font-medium text-gray-200 text-xl mt-8">Keep Connected</h2>
                     <div className="flex items-center justify-center gap-4 mt-4">
                         {/* Instagram */}
                         <Link href="#" target="_blank">
@@ -106,29 +106,41 @@ const LocationBlock = () => {
                     className="text-gray-300 text-lg hover:text-xl hover:underline hover:text-white transition-all duration-100"
                 >
                     UAE
+                </a>{' '}
+                <a
+                    data-tooltip-id="usa-tooltip"
+                    className="text-gray-300 text-lg hover:text-xl hover:underline hover:text-white transition-all duration-100"
+                >
+                    USA
                 </a>
             </div>
-
             <Tooltip id="bangladesh-tooltip" style={{ backgroundColor: 'black' }}>
                 <div>
-                    <p>HOUSE#340</p>
-                    <p>ROAD#24</p>
+                    <p>HOUSE#112</p>
+                    <p>Road#06</p>
                     <p>MOHAKHALI DOHS</p>
-                    <p>DHAKA</p>
+                    <p>DHAKA, BANGLADESH</p>
                 </div>
             </Tooltip>
             <Tooltip id="singapore-tooltip" style={{ backgroundColor: 'black' }}>
                 <div>
-                    <p>STREET#5</p>
-                    <p>SHENTON WAY</p>
-                    <p>SINGAPORE</p>
+                    <p>151 CHIN SWEE ROAD,</p>
+                    <p>#02-24 Manhattan House,</p>
+                    <p>169876</p>
                 </div>
             </Tooltip>
             <Tooltip id="uae-tooltip" style={{ backgroundColor: 'black' }}>
-                <div>
-                    <p>HOUSE#45</p>
-                    <p>SHEIKH ZAYED ROAD</p>
-                    <p>DUBAI</p>
+                <div className="uppercase">
+                    <p>Business Center</p>
+                    <p>Sharjah Publishing City Free Zone</p>
+                    <p>United Arab Emirates</p>
+                </div>
+            </Tooltip>{' '}
+            <Tooltip id="usa-tooltip" style={{ backgroundColor: 'black' }}>
+                <div className="uppercase">
+                    <p>2248 Broadway,</p>
+                    <p>#1619 NY 10024,</p>
+                    <p>New York</p>
                 </div>
             </Tooltip>
         </div>

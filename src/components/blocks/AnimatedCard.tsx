@@ -20,10 +20,10 @@ export default function AnimatedCard({ height, title, description, url }: Props)
             animate={isActive ? 'hover' : 'rest'}
             onClick={() => setIsActive(!isActive)} // toggles on mobile
             className={cn(
-                'group relative border border-gray-50/50 rounded-lg overflow-hidden w-full md:max-w-[400px] p-14 shadow-lg cursor-pointer'
+                'group relative bg-[#401444] border border-gray-50/50 rounded-lg overflow-hidden w-full md:max-w-[400px] p-14 shadow-lg cursor-pointer'
                 // add inner glow via pseudo
             )}
-            style={{ height: height ?? 420 }}
+            style={{ height: height ?? '720px' }}
         >
             {/* Title */}
             <motion.h2
@@ -46,14 +46,14 @@ export default function AnimatedCard({ height, title, description, url }: Props)
                         rest: { opacity: 0, y: 10 },
                         hover: {
                             opacity: 1,
-                            y: -50,
+                            y: -100,
                             transition: { duration: 0.4, ease: 'easeOut' },
                         },
                     }}
                     className="absolute left-6 bottom-40 text-md font-bold text-gray-200 z-10 hover:underline"
                 >
                     <a href={url} target="_blank" rel="noopener noreferrer">
-                        Visit Project →
+                        Visit Site →
                     </a>
                 </motion.div>
             )}

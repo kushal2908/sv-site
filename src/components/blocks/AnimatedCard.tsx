@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { cn } from '../lib/utils';
 import { motion } from 'motion/react';
 import Link from 'next/link';
@@ -12,14 +12,16 @@ type Props = {
 };
 
 export default function AnimatedCard({ height, title, description, url }: Props) {
+    const [isActive, setIsActive] = useState(false);
+
     return (
         <motion.div
             initial="rest"
             whileHover="hover"
-            whileTap="hover"
-            animate="rest"
+            animate={isActive ? 'hover' : 'rest'}
+            onClick={() => setIsActive(!isActive)} // toggles on mobile
             className={cn(
-                'group relative border border-gray-50/50 rounded-lg overflow-hidden w-full p-14 shadow-lg cursor-pointer'
+                'group relative border border-gray-50/50 rounded-lg overflow-hidden w-full md:max-w-[400px] p-14 shadow-lg cursor-pointer'
                 // add inner glow via pseudo
             )}
             style={{ height: height ?? 420 }}

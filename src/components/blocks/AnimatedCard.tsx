@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { cn } from '../lib/utils';
 import { motion } from 'motion/react';
-import Link from 'next/link';
 
 type Props = {
     height?: string | number;

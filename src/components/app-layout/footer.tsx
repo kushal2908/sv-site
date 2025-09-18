@@ -56,7 +56,7 @@ export default function Footer() {
                         </Link>
 
                         {/* Linkedin */}
-                        <Link href="#" target="_blank">
+                        <Link href="https://www.linkedin.com/company/skill-ventures/?viewAsMember=true" target="_blank">
                             <svg
                                 className="w-6 h-6 text-gray-800 dark:text-white"
                                 aria-hidden="true"

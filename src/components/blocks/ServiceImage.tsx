@@ -11,7 +11,7 @@ export default function ServiceImage({ src }: Props) {
   return (
     <>
       <div
-        className="relative border border-gray-50/60 rounded-lg overflow-hidden cursor-pointer"
+        className="group relative border border-gray-50/60 rounded-lg overflow-hidden cursor-pointer"
         onClick={() => setOpen(true)}
       >
         <Image
@@ -19,9 +19,9 @@ export default function ServiceImage({ src }: Props) {
           alt="skill ventures service"
           width={1920}
           height={200}
-          className="w-[500px] md:w-[500px] h-[250px] object-cover rounded-lg transition group-hover:bg-[#401444]/60"
+          className="w-[500px] md:w-[500px] h-[250px] object-cover rounded-lg "
         />
-        <div className="absolute inset-0 bg-[#401444]/40" />
+        <div className="absolute inset-0 bg-[#401444]/50 transition group-hover:bg-[#401444]/0" />
       </div>
       {/* Modal */}
       <AnimatePresence>

@@ -116,15 +116,6 @@ export default function LogoSlider() {
             height={200}
             className="w-full h-[100px] object-contain"
           />
-        </SwiperSlide>{" "}
-        <SwiperSlide>
-          <Image
-            src="/slider/1.png"
-            alt="skill-ventrure-clients"
-            width={1920}
-            height={200}
-            className="w-full h-[100px] object-contain"
-          />
         </SwiperSlide>
       </Swiper>
     </div>

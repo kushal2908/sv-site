@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 type Props = {
@@ -11,7 +10,7 @@ export default function ServiceVideo({ src }: Props) {
   return (
     <>
       <div
-        className="relative border border-gray-50/60 rounded-lg overflow-hidden cursor-pointer"
+        className="relative group border border-gray-50/60 rounded-lg overflow-hidden cursor-pointer"
         onClick={() => setOpen(true)}
       >
         <video
@@ -19,9 +18,9 @@ export default function ServiceVideo({ src }: Props) {
           autoPlay
           loop
           muted
-          className="w-[500px] md:w-[430px] h-[250px] object-cover rounded-lg"
+          className="w-[500px] md:w-[430px] h-[250px] object-cover rounded-lg transform transition duration-500 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-[#401444]/40" />
+        <div className="absolute inset-0 bg-[#401444]/40 transition group-hover:bg-[#401444]/0" />
       </div>
       {/* Modal */}
       <AnimatePresence>

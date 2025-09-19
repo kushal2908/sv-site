@@ -19,7 +19,7 @@ export default function ServiceImage({ src }: Props) {
           alt="skill ventures service"
           width={1920}
           height={200}
-          className="w-[500px] md:w-[500px] h-[250px] object-cover rounded-lg "
+          className="w-[500px] md:w-[500px] h-[250px] object-cover rounded-lg transform transition duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-[#401444]/50 transition group-hover:bg-[#401444]/0" />
       </div>

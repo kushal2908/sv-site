@@ -6,7 +6,7 @@ type Props = {
   src: string;
 };
 
-export default function ServiceImage({ src }: Props) {
+export default function ServiceVideo({ src }: Props) {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -14,12 +14,12 @@ export default function ServiceImage({ src }: Props) {
         className="relative border border-gray-50/60 rounded-lg overflow-hidden cursor-pointer"
         onClick={() => setOpen(true)}
       >
-        <Image
+        <video
           src={src}
-          alt="skill ventures service"
-          width={1920}
-          height={200}
-          className="w-[500px] md:w-[500px] h-[250px] object-cover rounded-lg transition group-hover:bg-[#401444]/60"
+          autoPlay
+          loop
+          muted
+          className="w-[500px] md:w-[430px] h-[250px] object-cover rounded-lg"
         />
         <div className="absolute inset-0 bg-[#401444]/40" />
       </div>
@@ -38,15 +38,15 @@ export default function ServiceImage({ src }: Props) {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="relative max-w-4xl max-h-[90vh] w-full p-4"
+              className="relative max-h-[90vh] w-full p-4"
               onClick={(e) => e.stopPropagation()} // prevent closing when clicking image
             >
-              <Image
+              <video
                 src={src}
-                alt="modal image"
-                width={1920}
-                height={1080}
-                className="w-full h-auto max-h-[60vh] object-contain rounded-lg"
+                autoPlay
+                loop
+                muted
+                className="w-full h-[80vh] px-4 object-cover rounded-lg"
               />
               <button
                 onClick={() => setOpen(false)}

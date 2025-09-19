@@ -29,7 +29,7 @@ export default function LogoSlider() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src="/slider/3.png"
+            src="/slider/2.png"
             alt="skill-ventrure-clients"
             width={1920}
             height={200}
@@ -38,7 +38,7 @@ export default function LogoSlider() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src="/slider/4.jpg"
+            src="/slider/3.png"
             alt="skill-ventrure-clients"
             width={1920}
             height={200}
@@ -56,7 +56,7 @@ export default function LogoSlider() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src="/slider/6.jpg"
+            src="/slider/6.png"
             alt="skill-ventrure-clients"
             width={1920}
             height={200}
@@ -65,7 +65,7 @@ export default function LogoSlider() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src="/slider/7.jpg"
+            src="/slider/7.png"
             alt="skill-ventrure-clients"
             width={1920}
             height={200}
@@ -83,7 +83,7 @@ export default function LogoSlider() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src="/slider/9.jpg"
+            src="/slider/9.png"
             alt="skill-ventrure-clients"
             width={1920}
             height={200}
@@ -101,7 +101,7 @@ export default function LogoSlider() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src="/slider/11.jpg"
+            src="/slider/11.png"
             alt="skill-ventrure-clients"
             width={1920}
             height={200}
@@ -110,7 +110,7 @@ export default function LogoSlider() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src="/slider/12.jpg"
+            src="/slider/12.png"
             alt="skill-ventrure-clients"
             width={1920}
             height={200}

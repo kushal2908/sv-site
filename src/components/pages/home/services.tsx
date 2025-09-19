@@ -2,6 +2,7 @@ import AnimatedCard from "@/components/blocks/AnimatedCard";
 import ServiceImage from "@/components/blocks/ServiceImage";
 import React from "react";
 import ServiceMobile from "./service-mobile";
+import ServiceVideo from "@/components/blocks/ServiceVideo";
 
 export default function Services() {
   return (
@@ -122,16 +123,8 @@ const ColumnFour = () => {
   return (
     <div className="flex flex-col gap-4 items-center justify-center">
       <ServiceImage src={"/brands/skill-graphics/sk-4.jpg"} />
-      <div className="relative border border-gray-50/50 rounded-lg overflow-hidden">
-        <video
-          src="/brands/mvrk/mvrk-vid.mp4"
-          autoPlay
-          loop
-          muted
-          className="w-[500px] md:w-[430px] h-[250px] object-cover rounded-lg"
-        />
-        <div className="absolute inset-0 bg-[#401444]/40" />
-      </div>
+      <ServiceVideo src={"/brands/mvrk/mvrk-vid.mp4"} />
+
       <AnimatedCard
         title={
           <>

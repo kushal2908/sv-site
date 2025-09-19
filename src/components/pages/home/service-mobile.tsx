@@ -78,7 +78,7 @@ export default function ServiceMobile() {
                 Search Engine Optimization
               </p>
               <p className="transition-all duration-700 ease-out delay-100 group-hover:translate-y-0">
-                Content Management
+                Content Marketing
               </p>
               <p className="transition-all duration-700 ease-out delay-200 group-hover:translate-y-0">
                 Website Design & Development

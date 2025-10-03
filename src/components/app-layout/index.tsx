@@ -1,13 +1,12 @@
-import React from 'react';
-import Footer from './footer';
-import NavBar from './nav-bar';
+import React from "react";
+import Footer from "./footer";
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
-    return (
-        <main>
-            {/* <NavBar /> */}
-            {children}
-            <Footer />
-        </main>
-    );
+  return (
+    <main>
+      {/* <NavBar /> */}
+      {children}
+      <Footer />
+    </main>
+  );
 }

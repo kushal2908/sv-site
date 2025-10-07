@@ -37,7 +37,7 @@ export default function AnimatedCard({
           "group relative bg-[#401444] border border-gray-50/50 rounded-lg overflow-hidden w-full md:max-w-[400px] p-14 shadow-lg cursor-pointer"
           // add inner glow via pseudo
         )}
-        style={{ height: height ?? "520px" }}
+        style={{ height: height ?? "420px" }}
       >
         {/* Title */}
         <motion.h2
@@ -60,7 +60,7 @@ export default function AnimatedCard({
               rest: { opacity: 0, y: 10 },
               hover: {
                 opacity: 1,
-                y: 0,
+                y: 50,
                 transition: { duration: 0.4, ease: "easeOut", delay: 0.2 },
               },
             }}
@@ -77,7 +77,7 @@ export default function AnimatedCard({
           variants={{
             rest: {
               scale: 1,
-              x: 0,
+              x: 15,
               y: 100,
               transition: { duration: 0.8, ease: "easeIn" },
             },
@@ -86,13 +86,13 @@ export default function AnimatedCard({
               x: -35,
               y: isLargeContent
                 ? isDesktopOrLaptop
-                  ? 240
+                  ? 180
                   : isTablet
                   ? 200
                   : 320
-                : 320,
+                : 240,
               bottom: "auto",
-              transition: { duration: 0.8, ease: "easeOut" },
+              transition: { duration: 0.5, ease: "easeOut" },
             },
           }}
           // className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-2 text-white font-normal text-[18px] whitespace-pre-line"

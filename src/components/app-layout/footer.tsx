@@ -24,7 +24,7 @@ export default function Footer() {
           <h2 className="font-medium text-gray-200 text-xl mt-8">
             Keep Connected
           </h2>
-          <div className="flex items-center justify-center gap-4 mt-4">
+          <div className="flex items-center justify-center gap-4 mt-4 order-1 md:order-none">
             {/* Instagram */}
             <Link
               href="https://www.instagram.com/skillventures.sv?igsh=M3BwMGJlN2JtbHNt"
@@ -136,30 +136,36 @@ const LocationBlock = () => {
           USA
         </a>
       </div>
-      <Tooltip id="bangladesh-tooltip" style={{ backgroundColor: "black" }}>
-        <div>
+      <Tooltip
+        id="bangladesh-tooltip"
+        style={{ backgroundColor: "rgba(0,0,0,0)" }}
+      >
+        <div className="text-white tracking-tight text-[13px]">
           <p>House#112</p>
           <p>Road#06</p>
           <p>Mohakhali DOHS</p>
           <p>Dhaka, Bangladesh</p>
         </div>
       </Tooltip>
-      <Tooltip id="singapore-tooltip" style={{ backgroundColor: "black" }}>
-        <div>
+      <Tooltip
+        id="singapore-tooltip"
+        style={{ backgroundColor: "rgba(0,0,0,0)" }}
+      >
+        <div className="text-white tracking-tight text-[13px]">
           <p>151 Chin Swee Road,</p>
           <p>#02-24 Manhattan House,</p>
           <p>169876</p>
         </div>
       </Tooltip>
-      <Tooltip id="uae-tooltip" style={{ backgroundColor: "black" }}>
-        <div className="">
+      <Tooltip id="uae-tooltip" style={{ backgroundColor: "rgba(0,0,0,0)" }}>
+        <div className="text-white tracking-tight text-[13px]">
           <p>Business Center</p>
           <p>Sharjah Publishing City Free Zone,</p>
           <p>United Arab Emirates</p>
         </div>
       </Tooltip>{" "}
-      <Tooltip id="usa-tooltip" style={{ backgroundColor: "black" }}>
-        <div className="">
+      <Tooltip id="usa-tooltip" style={{ backgroundColor: "rgba(0,0,0,0)" }}>
+        <div className="text-white tracking-tight text-[13px]">
           <p>2248 Broadway,</p>
           <p>#1619 NY 10024,</p>
           <p>New York</p>

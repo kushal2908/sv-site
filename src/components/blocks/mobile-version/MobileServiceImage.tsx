@@ -1,26 +1,27 @@
 'use client';
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 type Props = {
     src: string;
 };
 
-export default function ServiceVideo({ src }: Props) {
+export default function MobileServiceImage({ src }: Props) {
     const [open, setOpen] = useState(false);
     return (
         <>
             <div
-                className="relative group border border-gray-50/60 rounded-lg overflow-hidden cursor-pointer"
+                className="group relative border border-gray-50/60 rounded-2xl overflow-hidden cursor-pointer"
                 onClick={() => setOpen(true)}
             >
-                <video
+                <Image
                     src={src}
-                    autoPlay
-                    loop
-                    muted
-                    className="w-[500px] md:w-[430px] h-[200px] object-cover rounded-lg transform transition duration-500 group-hover:scale-105"
+                    alt="skill ventures service"
+                    width={1920}
+                    height={200}
+                    className="h-[180px] object-cover rounded-lg transform transition duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-[#401444]/40 transition group-hover:bg-[#401444]/40" />
+                <div className="absolute inset-0 bg-[#401444]/70 transition group-hover:bg-[#401444]/70" />
             </div>
             {/* Modal */}
             <AnimatePresence>
@@ -37,13 +38,19 @@ export default function ServiceVideo({ src }: Props) {
                             animate={{ scale: 1, opacity: 1 }}
                             exit={{ scale: 0.9, opacity: 0 }}
                             transition={{ duration: 0.3 }}
-                            className="relative max-h-[90vh] w-full p-4"
+                            className="relative max-w-4xl max-h-[90vh] w-full p-4"
                             onClick={(e) => e.stopPropagation()} // prevent closing when clicking image
                         >
-                            <video src={src} autoPlay loop muted className="w-full h-[80vh] px-4 object-cover rounded-lg" />
+                            <Image
+                                src={src}
+                                alt="modal image"
+                                width={1920}
+                                height={1080}
+                                className="w-full h-auto max-h-[60vh] object-contain rounded-lg"
+                            />
                             <button
                                 onClick={() => setOpen(false)}
-                                className="absolute top-4 right-4 text-white bg-[#401444]/60 px-3 py-1 rounded-md"
+                                className="absolute top-4 right-4 text-white bg-[#401444]/90 px-3 py-1 rounded-md"
                             >
                                 ✕
                             </button>

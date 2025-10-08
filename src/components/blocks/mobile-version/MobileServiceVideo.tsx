@@ -5,7 +5,7 @@ type Props = {
     src: string;
 };
 
-export default function ServiceVideo({ src }: Props) {
+export default function MobileServiceVideo({ src }: Props) {
     const [open, setOpen] = useState(false);
     return (
         <>
@@ -18,7 +18,7 @@ export default function ServiceVideo({ src }: Props) {
                     autoPlay
                     loop
                     muted
-                    className="w-[500px] md:w-[430px] h-[200px] object-cover rounded-lg transform transition duration-500 group-hover:scale-105"
+                    className="w-[500px] md:w-[430px] h-[180px] object-cover rounded-lg transform transition duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-[#401444]/40 transition group-hover:bg-[#401444]/40" />
             </div>
